@@ -1,0 +1,12 @@
+.container.main.ng-scope {
+  margin-top: 130px;
+}
+
+.filters .nav-pills>li {
+  float: right!important;
+}
+
+
+.navbar-header {
+  float: right;
+}

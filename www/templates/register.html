@@ -1,0 +1,47 @@
+<ion-view title="firebase">
+	<ion-content>
+
+	
+		<div>
+			<div class="list list-inset">
+				<button class="button button-full button-calm">
+				  פרטי משתמש
+				</button>
+				<label class="item item-input">
+					<input ng-model="username" type="text" placeholder="שם משתמש">
+				</label>
+				<label class="item item-input">
+					<input ng-model="email" type="email" placeholder="אימייל">
+				</label>
+				<label class="item item-input">
+					<input ng-model="password" type="text" placeholder="סיסמא">
+				</label>
+
+		
+				<button class="button button-full button-calm">
+				  פרטי חשבון
+				</button>
+				<div class="list">
+				    <label class="item item-input">
+						<input ng-model="credit" type="number" pattern="[0-9]{13,16}" placeholder="מספר כרטיס אשראי">
+					</label>
+					<label class="item item-input">
+						<input ng-model="dedline" type="date" placeholder="תוקף">
+					</label>
+					<label class="item item-input">
+						<input ng-model="cvv" type="number" placeholder="cvv">
+					</label>
+					<label class="item item-input">
+						<input ng-model="id" type="number" placeholder="תעודת זהות">
+					</label>
+				</div>
+			</div>
+			<div class="padding-left padding-right">
+				<div class="button-bar">
+					<a class="button" ng-click="login(username , password)">Login</a>
+					<a class="button" ng-click="register(username , password)">Register</a>
+				</div>
+			</div>
+		</div>
+	</ion-content>
+</ion-view>
